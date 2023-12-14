@@ -1,0 +1,122 @@
+.blink {
+	animation-name: blinker;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	animation-duration: 2s;
+	-webkit-animation-name: blinker;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-duration: 2s;
+}
+
+@keyframes blinker {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0.1;
+	}
+}
+
+@-webkit-keyframes blinker {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0.1;
+	}
+}
+
+.skeleton {
+	background: #424242e7;
+	/* margin-bottom: 10; */
+	border-radius: 2px;
+}
+
+.skeleton.avatar {
+	width: 51px;
+	height: 51px;
+	margin-right: 15px;
+	margin-bottom: 12px;
+}
+
+.skeleton.track {
+	width: 220px;
+	height: 20px;
+	margin-right: 160px;
+	margin-bottom: 12px;
+}
+
+.skeleton.name {
+	width: 200px;
+	height: 20px;
+	margin-right: 118px;
+	margin-bottom: 12px;
+}
+
+.skeleton.album {
+	width: 150px;
+	height: 20px;
+	margin-right: 100px;
+	margin-bottom: 12px;
+}
+
+.skeleton.like {
+	width: 24px;
+	height: 20px;
+	margin-right: 5px;
+	margin-bottom: 12px;
+}
+
+.skeleton.time {
+	width: 30px;
+	height: 20px;
+	margin-bottom: 12px;
+}
+
+.skeleton-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	align-items: center;
+}
+
+.skeleton-avatar-track {
+	display: flex;
+	align-items: center;
+}
+
+.skeleton-like-time {
+	display: flex;
+	align-items: center;
+}
+
+.skeleton-selections {
+	background: #424242e7;
+	border-radius: 2px;
+	width: 250px;
+	height: 150px;
+	margin-bottom: 20px;
+}
+
+/* skeleton-player */
+.skeleton-player {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	border-radius: 2px;
+}
+
+.skeleton.playerTrack {
+	width: 110px;
+	height: 20px;
+	border-radius: 2px;
+}
+
+.skeleton.playerTrack:not(:last-child) {
+	margin-bottom: 5px;
+}
+
+.skeleton.playerAvatar {
+	width: 51px;
+	height: 51px;
+}
